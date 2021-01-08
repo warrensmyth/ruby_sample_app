@@ -12,10 +12,16 @@ class PalindromeAppTest < Minitest::Test
     assert doc(last_response).at_css('form')
   end
 
+  
   def test_palindrome_submission
     post '/check', phrase: "Able was I, ere I saw Elba."
     assert_includes doc(last_response).at_css('p').content, "is a palindrome"
   end
 
-  
+  def test_palindrome_title
+  	get '/palindrome'
+  	assert_includes doc(last_response).at_css('h1').content, "Palindrome Detector"
+  end
+
+
 end
