@@ -37,7 +37,7 @@ GEM
       rack-protection (= 2.0.3)
       tilt (~> 2.0)
     tilt (2.0.10)
-    wsmyth_palindrome (0.2.0)
+    wsmyth_palindrome (0.3.0)
 
 PLATFORMS
   ruby
@@ -50,7 +50,7 @@ DEPENDENCIES
   rake (= 13.0.3)
   rerun (= 0.13.0)
   sinatra (= 2.0.3)
-  wsmyth_palindrome (= 0.2.0)
+  wsmyth_palindrome (= 0.3.0)
 
 BUNDLED WITH
    2.1.4
